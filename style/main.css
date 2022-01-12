@@ -1,0 +1,473 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+body nav {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background: #eae9ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav div.responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+
+body nav div.responsive .desktop-menu {
+  display: none;
+}
+
+body nav .menu-toggle {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+body nav .status-led {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+body nav .slidingMenu {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 85vw;
+  background: #9f9b9f;
+}
+
+body nav .slidingMenu .slideDefault {
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body nav .slidingMenu .slideDefault > * {
+  z-index: 5;
+}
+
+body nav .slidingMenu .slideDefault h1 {
+  padding: 40px 30px;
+  color: #5d5c60;
+  font-size: 25px;
+}
+
+body nav .slidingMenu .slideDefault .links {
+  padding: 10px 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body nav .slidingMenu .slideDefault .links a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 10px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+body nav .slidingMenu .slideDefault .links a i {
+  padding: 5px;
+  width: 50px;
+}
+
+body nav .slidingMenu .slideDefault .links .active {
+  color: #015f1a;
+}
+
+body nav .slidingMenu .slideDefault .links p {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 10px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+body table {
+  border-collapse: collapse;
+}
+
+body table thead td {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 3px;
+}
+
+body table tbody td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+}
+
+body form label {
+  padding: 3px;
+}
+
+body form input, body form button, body form select {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+body form button {
+  background: moccasin;
+}
+
+body form input[type=checkbox] {
+  display: none;
+}
+
+body form input[type=checkbox] + label {
+  padding: 5px 8px;
+  margin: 5px;
+  border-radius: 3px;
+  border: 1px solid black;
+  background: moccasin;
+}
+
+body form input[type=checkbox]:checked + label {
+  background: #e89300;
+}
+
+body .c-button {
+  text-align: center;
+  padding: 5px 30px;
+  margin: 5px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid black;
+  background: moccasin;
+}
+
+body .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .center h3 {
+  display: inline-block;
+}
+
+body .button-form {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+  border: 1px solid black;
+  background: moccasin;
+}
+
+body .nowrap {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .table-p {
+  width: 95%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+body .table-p table {
+  margin: 0 auto;
+}
+
+body .table-p table .date {
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+body main.generator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main {
+  padding-bottom: 100px;
+}
+
+body main section {
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main section table {
+  border-collapse: collapse;
+  display: inline-block;
+}
+
+body main section table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+body main section tr form {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main section#checks button {
+  padding: 25px;
+  width: 200px;
+  margin: 10px;
+}
+
+body main section#checks .default-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main section#checks .checks-tab {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 0;
+}
+
+body main section#checks .checks-tab i {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+body main section#checks .checks-tab .red {
+  color: red;
+}
+
+body main section#checks .checks-tab .green {
+  color: green;
+}
+
+body footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #938e93;
+  text-align: center;
+}
+
+body .user-info {
+  position: fixed;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .user-info .content {
+  background: white;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  position: relative;
+  padding: 15px;
+}
+
+body .user-info .content .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .user-info .content .columns .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .user-info .content .columns .column .block {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body .user-info .content .columns .column .block table {
+  border-collapse: collapse;
+}
+
+body .user-info .content .columns .column .block table td {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+body .user-info .content .columns .column .block .switches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .user-info .content .columns .column .block .switches form {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .user-info .content .columns .column:first-child {
+  width: 55%;
+}
+
+body .user-info .content .columns .column:last-child {
+  height: 600px;
+  width: 40%;
+}
+
+body .user-info .content .columns .column:last-child .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .user-info .content .exit {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background: initial;
+}
+
+body .load {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f1ea";
+}
+/*# sourceMappingURL=main.css.map */

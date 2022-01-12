@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(www\.)?site1\.com$ [NC]
+RewriteRule ^(dir1/.*)$ http://www.site2.com/$1 [L,NC,P]

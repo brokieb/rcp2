@@ -1,0 +1,176 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.col-1 {
+  width: 7.33%;
+}
+
+.col-2 {
+  width: 15.66%;
+}
+
+.col-3 {
+  width: 24%;
+}
+
+.col-4 {
+  width: 32.33%;
+}
+
+.col-5 {
+  width: 40.66%;
+}
+
+.col-6 {
+  width: 49%;
+}
+
+.col-7 {
+  width: 57.33%;
+}
+
+.col-8 {
+  width: 65.66%;
+}
+
+.col-9 {
+  width: 74%;
+}
+
+.col-10 {
+  width: 82.33%;
+}
+
+.col-11 {
+  width: 90.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.space-around {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.main {
+  background-image: url("../imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+}
+
+.main form label {
+  padding: 5px;
+}
+
+.main form input {
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.main form button {
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.main h1, .main h2, .main h3, .main h4 {
+  display: inline-block;
+}
+
+.main .blur {
+  background-color: rgba(253, 253, 224, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+}
+
+.main .nav-list li {
+  list-style: none;
+}
+
+.main .nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.main .active-services h2 {
+  padding-bottom: 20px;
+}
+
+.main .active-services .this-service {
+  padding: 20px 40px;
+}
+
+.main .active-services .this-service h3 {
+  padding: 5px;
+}
+
+.main .active-services .this-service ul {
+  list-style: none;
+}
+
+.main .active-services .this-service ul li {
+  padding: 5px 0;
+}
+
+.main .active-services .this-service:hover {
+  background: silver;
+}
+
+.main .active-services .outer-this-service + .outer-this-service:before {
+  display: block;
+  content: "";
+  border-top: 2px solid black;
+  margin: 10px auto;
+  width: 5rem;
+}
+/*# sourceMappingURL=main.css.map */

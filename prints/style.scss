@@ -1,0 +1,37 @@
+@media print {
+    *{
+        font-family: 'Roboto', sans-serif;
+    }
+    .config{
+        display:none;
+    }
+    .page {
+        page-break-after: always;
+        h1,h2{
+            text-align:center;
+        }
+        p{
+            text-align:right;
+        }
+        .tresc{
+            padding-top:70px;
+            display:block;
+            text-align:center;
+        }
+        .podpis{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            padding:0 50px;
+        }
+        .podpisy{
+            padding-top:100px;
+            display:flex;
+            justify-content:space-between;
+        }
+        .kropki-podpis{
+            padding-top:30px;
+        }
+    }
+  }

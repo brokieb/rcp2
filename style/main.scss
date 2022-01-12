@@ -1,0 +1,352 @@
+@import "variables";
+* {
+  font-family: "Lato", sans-serif;
+} 
+body {
+  margin: 0;
+  padding: 0;
+  min-height:100vh;
+  position:relative;
+  nav {
+    position: relative;
+    width: 100%;
+    z-index: 5; 
+    top: 0;
+    left: 0;
+    background: lighten($secondaryColor, 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div.responsive {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 10px;
+      .desktop-menu {
+        display: none;
+      }
+    }
+    .menu-toggle {
+      justify-content: flex-end !important;
+    }
+    .status-led{
+      width:20px;
+      height:20px;
+      display:inline-block;
+      border-radius:100%;
+    }
+    .slidingMenu { 
+      overflow-y: scroll;
+      overflow-x: hidden;
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      height: 100%;
+      width: 85vw;
+      background: lighten($secondaryColor, 5%);
+      .slideDefault {
+        position: relative;
+        z-index: -1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        > * {
+          z-index: 5;
+        }
+        h1 {
+          padding: 40px 30px;
+          color: $primaryColor;
+          font-size: 25px;
+        }
+        .links {
+          padding: 10px 0 0 10px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 20px 10px;
+            letter-spacing: 2px;
+            font-weight: bolder;
+            i {
+              padding: 5px;
+              width: 50px; 
+            }
+          }
+          .active {
+            color: #015f1a;
+          }
+          p {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 20px 10px;
+            letter-spacing: 2px;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+
+  
+  table{
+    border-collapse:collapse;
+    thead{
+      td{
+        border:1px solid black;
+        padding:3px; 
+        margin:3px;
+      }
+    }
+    tbody{
+      td{
+        border:1px solid black;
+        padding:10px;
+
+      }
+    }
+    
+  }
+  form {
+    display:flex;
+    flex-direction:column;
+    max-width :300px;
+    label{
+      padding:3px;
+    }
+    input,button,select{
+      padding:5px;
+      margin:5px;
+      border-radius:3px;
+      border:1px solid black;
+ } 
+ button{
+   background:moccasin;
+ }
+ input[type=checkbox]{
+   display:none;
+ } 
+ input[type=checkbox] + label{
+     padding:5px 8px;
+      margin:5px;
+      border-radius:3px;
+      border:1px solid black;
+      background:moccasin;
+ 
+ }
+ input[type=checkbox]:checked + label{
+   background:darken(moccasin,40%);
+ } 
+} 
+.c-button{
+  text-align:center;
+  padding:5px 30px;
+      margin:5px;
+      display:inline-block;
+      color:black;
+      text-decoration:none;
+      border-radius:3px;
+      border:1px solid black;
+      background:moccasin;
+}
+.center{
+  display:flex;  
+  justify-content:space-around;
+  h3{
+    display:inline-block;
+  }
+}
+.button-form{
+  padding:5px;
+  margin:5px;
+  border-radius:3px;
+  border:1px solid black;
+  background:moccasin;
+  }
+  .nowrap{
+    white-space:nowrap;
+    display:flex;
+    flex-direction:row;
+  }
+  
+.table-p{
+  width:95%;
+  margin:0 auto; 
+  overflow-x:auto;
+  table{
+    margin:0 auto;
+    .date{
+      padding:0;
+      margin:0;
+      white-space: nowrap; 
+    }
+  }
+} 
+//   display:flex;
+//   table{
+//     margin:0 auto;
+//     overflow-x:scroll;
+//     display:block;
+//   }
+// }
+main.generator{
+  display:flex;
+  justify-content:center;
+  align-items:center; 
+}
+main{
+  padding-bottom:100px;
+  section {
+    margin:5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    table {
+      border-collapse: collapse;
+      display:inline-block;
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+    }
+   
+  tr form{ 
+    flex-direction:row;
+  }
+
+}
+
+
+  section#checks{
+    
+    button{
+     padding:25px;
+     width:200px;
+     margin:10px;
+    }
+    .default-info{
+      flex-direction:column;
+    }
+    .checks-tab{
+      display:none;
+      flex-direction:column;
+      align-items:center;
+      padding:2px 0 ;
+      i{
+        font-size:20px;
+        padding-right:5px;
+      }
+        .red{
+          color:red;
+    }
+    .green{
+      color:green;
+    }
+  }
+  }
+  // .generator{
+  //     display:block!important;
+  //     input[type=checkbox]{
+  //       display:inline-block!important;
+  //     }
+  //     label{
+  //       padding:1px 15px!important;
+  //     }
+  
+    
+  // }
+}
+footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background:$secondaryColor;
+  text-align: center;
+}
+.user-info{
+  position:fixed;
+  z-index:10;
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  display:none;
+  justify-content:space-around;
+  align-items:center;
+  .content{
+    background:white;
+    width:80%;
+    height:80%;
+    overflow-y:scroll;
+    position:relative;
+    padding:15px;  
+    .columns{
+      display:flex;
+      justify-content:space-around;
+      .column{
+        display:flex;
+        justify-content:space-around;
+        .block{
+
+          width:100%;
+          margin:0 auto;
+        table{
+        border-collapse:collapse;
+          td{
+            border:1px solid black;
+            padding:3px;
+          }
+        } 
+        .switches{
+          display:flex;
+          justify-content:center;
+          flex-direction:column;
+          form{
+            justify-content:space-around;
+            display:flex;
+            flex-direction:row;
+          }
+        }
+      }
+      }
+      .column:first-child{
+        width:55%;
+      }
+      .column:last-child{
+        height:600px;
+      width:40%;
+      .block{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        flex-direction:column;
+      }
+      }
+    }
+    .exit{
+      position:absolute;
+      right:20px;
+      top:20px;
+      border:none;
+      background:initial;
+    }
+  }
+}
+.load{
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f1ea";
+}
+
+} 

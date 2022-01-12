@@ -1,0 +1,17 @@
+.shadow-2-strong {
+  padding: 20px;
+}
+
+#login {
+  background-image: url("../img/background.jpg");
+  height: 100vh;
+}
+main{
+  margin: 0 auto;
+}
+.grid-sizer,
+.masonry{
+
+  min-width:43%;
+}
+/*# sourceMappingURL=main_new.css.map */

@@ -1,0 +1,83 @@
+@media (min-width: 600px) {
+  body nav .slidingMenu .slideDefault {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav .slidingMenu .slideDefault .links {
+    width: 60%;
+  }
+  body nav div.responsive .desktop-menu {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body nav div.responsive .desktop-menu a {
+    color: black;
+  }
+  body nav div.responsive .desktop-menu a span {
+    display: none;
+  }
+  body nav div.responsive .desktop-menu a.active {
+    color: #015f1a;
+  }
+  body nav div.responsive .desktop-menu .group-toggle {
+    position: relative;
+  }
+  body nav div.responsive .desktop-menu .group-toggle .group-link {
+    padding-bottom: 5px;
+    border-bottom: 3px solid lime;
+  }
+  body nav div.responsive .desktop-menu .group-toggle ul {
+    position: absolute;
+    background: #eae9ea;
+    list-style: none;
+    padding: 0;
+    left: -20px;
+  }
+  body nav div.responsive .desktop-menu .group-toggle ul li {
+    padding: 20px 40px 20px 10px;
+  }
+  body nav div.responsive .desktop-menu .group-toggle ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  body nav div.responsive .desktop-menu .group-toggle ul li a i {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60px;
+  }
+  body nav .menu-toggle {
+    display: none;
+  }
+  body main {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  body main.wall {
+    width: 98%;
+    margin: 0 auto;
+  }
+  body main.wall section {
+    width: 48%;
+  }
+  body main.wall .table-p {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
